@@ -7,7 +7,7 @@ using the products table and the categories table, return the product name and t
  WHERE c.Name LIKE 'computers';
  
 /* joins: find all product names, product prices, and products ratings that have a rating of 5 */
- SELECT Name, Price, Ratings FROM products p
+ SELECT Name, Price, Rating FROM products p
  JOIN reviews r ON p.ProductID = r.ProductID
  WHERE r.Rating = 5;
  
